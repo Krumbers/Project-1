@@ -24,11 +24,12 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly protected and redundant_____, in addition to restricting _unauthorized traffic/overwhelming network requests (DDos)____ to the network.
+Load balancing ensures that the application will be highly protected and redundant_____, in addition to restricting _unauthorized traffic/overwhelming network requests (DDoS)____ to the network.
 -What aspect of security do load balancers protect? What is the advantage of a jump box?_
-Load balancers aid in the protection of primary webservers from traffic overload. This is done by offloading high volume traffic from the primary server to a secondary pool of servers meant to relieve the network load and distribute the load across the servers. A Jumpbox ensures that the only external access point to the network is the Jumpbox. There is no way to navigate through our network without first landing on the Jumpbox and providing rules that allow traversing through the network. 
+-Load balancers aid in the protection of primary webservers from traffic overload. This is done by offloading high volume traffic from the primary server to a secondary pool of servers meant to relieve the network load and distribute the load across the servers. 
+-A Jumpbox ensures that the only external access point to the network is the Jumpbox. There is no way to navigate through our network without first landing on the Jumpbox and providing rules that allow traversing through the network. 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the __configuration files___ and system __files___.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the configuration files and system files.
 -What does Filebeat watch for?_Filebeat monitors log files and events specified by the user. These logs and events are compiled for review through tools such as elasticsearch or Logstash for indexing
 
 -What does Metricbeat record?_Metricbeat takes collected data and sends it to a specified output. Known as a metric shipper, metricbeat can automatically insert collected metrics directly into elasticsearch or Logstash. Metricbeat can collect metrics from many services such as Apache, MySQL, and Redis.
