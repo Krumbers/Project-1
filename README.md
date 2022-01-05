@@ -26,16 +26,17 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly protected and redundant_____, in addition to restricting _unauthorized traffic/overwhelming network requests (DDoS)____ to the network.
 -What aspect of security do load balancers protect? What is the advantage of a jump box?_
--Load balancers aid in the protection of primary webservers from traffic overload. This is done by offloading high volume traffic from the primary server to a secondary pool of servers meant to relieve the network load and distribute the load across the servers. 
--A Jumpbox ensures that the only external access point to the network is the Jumpbox. There is no way to navigate through our network without first landing on the Jumpbox and providing rules that allow traversing through the network. 
+Load balancers aid in the protection of primary webservers from traffic overload. This is done by offloading high volume traffic from the primary server to a secondary pool of servers meant to relieve the network load and distribute the load across the servers. 
+A Jumpbox ensures that the only external access point to the network is the Jumpbox. There is no way to navigate through our network without first landing on the Jumpbox and providing rules that allow traversing through the network. 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the configuration files and system files.
--What does Filebeat watch for?_Filebeat monitors log files and events specified by the user. These logs and events are compiled for review through tools such as elasticsearch or Logstash for indexing
+-What does Filebeat watch for?
+Filebeat monitors log files and events specified by the user. These logs and events are compiled for review through tools such as elasticsearch or Logstash for indexing
 
--What does Metricbeat record?_Metricbeat takes collected data and sends it to a specified output. Known as a metric shipper, metricbeat can automatically insert collected metrics directly into elasticsearch or Logstash. Metricbeat can collect metrics from many services such as Apache, MySQL, and Redis.
+-What does Metricbeat record?
+Metricbeat takes collected data and sends it to a specified output. Known as a metric shipper, metricbeat can automatically insert collected metrics directly into elasticsearch or Logstash. Metricbeat can collect metrics from many services such as Apache, MySQL, and Redis.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -48,10 +49,11 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the __Jumpbox Provisioner___ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - 67.176.49.44
-Machines within the network can only be accessed by _the Jumpbox____.
--Which machine did you allow to access your ELK VM? What was its IP address?_My personal host machine (IP: 67.176.49.44)
+Machines within the network can only be accessed by the Jumpbox.
+-Which machine did you allow to access your ELK VM? What was its IP address?
+My personal host machine (IP: 67.176.49.44)
 
 A summary of the access policies in place can be found in the table below.
 
@@ -94,9 +96,9 @@ Filebeat monitors log files and log events. Metricbeat looks out for any informa
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the __ansible configuration___ file to __run the playbook___.
-- Update the __ansible host___ file to include IP addresses of machines that beats will be deployed on.
-- Run the playbook, and navigate to _Web1 and Web2__ to check that the installation worked as expected.
+- Copy the ansible configuration file to run the playbook.
+- Update the ansible host file to include IP addresses of machines that beats will be deployed on.
+- Run the playbook, and navigate to Web1 and Web2 to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
