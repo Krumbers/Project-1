@@ -72,8 +72,8 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance. gifted_lamport is the container being used.
 
+![docker ps](https://user-images.githubusercontent.com/89494589/148151878-17317039-5a26-4756-9091-8cae0a351b84.png)
 
-![virtual network](https://user-images.githubusercontent.com/89494589/148151837-2f846342-fd26-4425-a18e-cf5eb583a41a.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
