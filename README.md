@@ -62,7 +62,7 @@ A summary of the access policies in place can be found in the table below.
 | Jump Box | Yes                 | 67.176.49.44         |
 | Web1     | No                  | 10.0.0.4 & 10.0.0.5  |
 | Web2     | No                  | 10.0.0.4 & 10.0.0.6  |
-| ELK      | Yes (HTTP)          | 10.2.0.4&67.176.49.44|
+| ELK      | Yes (HTTP)          | 67.176.49.44         |
 
 ### Elk Configuration
 
