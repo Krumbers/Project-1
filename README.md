@@ -106,4 +106,6 @@ SSH into the control node and follow the steps below:
 - The URL to access Kibana is as follows: (ELK Public IP):5601/app/kibana. The current public IP for the ELK machine is 13.77.214.176
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc. 
+
 ansible-playbook install-elk.yml
+dpkg -i
