@@ -105,7 +105,6 @@ SSH into the control node and follow the steps below:
 - The host file is located in the same ansible directory (-/etc/ansible/hosts) and needs to be updated to run on specific machines. Installation of the ELK machine and tools such as Filebeat must be dictated in the ansible configuration file.
 - The URL to access Kibana is as follows: (ELK Public IP):5601/app/kibana. The current public IP for the ELK machine is 13.77.214.176
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc. 
 
 ansible-playbook install-elk.yml
 
